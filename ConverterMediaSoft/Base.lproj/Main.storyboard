@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ConverterMediaSoft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Конвертер по курсу Нацбанка" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huK-rV-i84">
+                                <rect key="frame" x="20" y="44" width="374" height="118"/>
+                                <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="0.28148585439517798" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2473be05a74b7a3634ecbab3edfe57a8.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UOr-fd-iXM">
+                                <rect key="frame" x="20" y="196" width="145" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="CSJ-Tc-Q1e"/>
+                                    <constraint firstAttribute="height" constant="116" id="Gj0-Gr-Qvu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="17d49efc988357e2d396a5314d90c29a.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qF3-KX-eFc">
+                                <rect key="frame" x="20" y="330" width="145" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="7Mp-57-mBb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RUB" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbj-NF-oPV">
+                                <rect key="frame" x="173" y="330" width="17" height="116"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите значение" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sUl-7Y-5pH">
+                                <rect key="frame" x="209" y="196" width="185" height="116"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="90"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VbV-xo-39M">
+                                <rect key="frame" x="209" y="330" width="185" height="116"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="90"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Der-SV-CcX">
+                                <rect key="frame" x="166" y="497" width="82" height="48"/>
+                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="0.39204123793848306" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Convert it!">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonOk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sW6-rC-vqy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6M-Bo-SUV">
+                                <rect key="frame" x="173" y="196" width="17" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="tdS-Uq-1Kk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="K6M-Bo-SUV" firstAttribute="leading" secondItem="UOr-fd-iXM" secondAttribute="trailing" constant="8" symbolic="YES" id="0Rd-6H-FQ4"/>
+                            <constraint firstItem="fbj-NF-oPV" firstAttribute="bottom" secondItem="VbV-xo-39M" secondAttribute="bottom" id="0qb-1G-AHo"/>
+                            <constraint firstItem="K6M-Bo-SUV" firstAttribute="trailing" secondItem="fbj-NF-oPV" secondAttribute="trailing" id="12U-fE-zC2"/>
+                            <constraint firstItem="UOr-fd-iXM" firstAttribute="bottom" secondItem="K6M-Bo-SUV" secondAttribute="bottom" id="1SE-tf-a5F"/>
+                            <constraint firstItem="K6M-Bo-SUV" firstAttribute="top" secondItem="sUl-7Y-5pH" secondAttribute="top" id="45c-ZV-Mco"/>
+                            <constraint firstItem="sUl-7Y-5pH" firstAttribute="leading" secondItem="K6M-Bo-SUV" secondAttribute="trailing" constant="19" id="61p-Gt-ZaD"/>
+                            <constraint firstItem="qF3-KX-eFc" firstAttribute="top" secondItem="fbj-NF-oPV" secondAttribute="top" id="AOg-ur-5LL"/>
+                            <constraint firstItem="huK-rV-i84" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="C1L-dX-2qF"/>
+                            <constraint firstItem="sUl-7Y-5pH" firstAttribute="leading" secondItem="VbV-xo-39M" secondAttribute="leading" id="IAg-fV-0S9"/>
+                            <constraint firstItem="UOr-fd-iXM" firstAttribute="top" secondItem="K6M-Bo-SUV" secondAttribute="top" id="ItD-4h-SDp"/>
+                            <constraint firstItem="UOr-fd-iXM" firstAttribute="leading" secondItem="qF3-KX-eFc" secondAttribute="leading" id="LqO-H9-nNW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Der-SV-CcX" secondAttribute="bottom" constant="317" id="Ple-ms-JW5"/>
+                            <constraint firstItem="qF3-KX-eFc" firstAttribute="bottom" secondItem="fbj-NF-oPV" secondAttribute="bottom" id="PpJ-KZ-tHf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qF3-KX-eFc" secondAttribute="bottom" constant="416" id="Rnh-XE-za9"/>
+                            <constraint firstItem="huK-rV-i84" firstAttribute="leading" secondItem="UOr-fd-iXM" secondAttribute="leading" id="WSS-s9-TGf"/>
+                            <constraint firstItem="fbj-NF-oPV" firstAttribute="top" secondItem="VbV-xo-39M" secondAttribute="top" id="ZSj-hc-09s"/>
+                            <constraint firstItem="sUl-7Y-5pH" firstAttribute="trailing" secondItem="VbV-xo-39M" secondAttribute="trailing" id="fFr-e0-VjC"/>
+                            <constraint firstItem="huK-rV-i84" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oSp-cI-MMk"/>
+                            <constraint firstItem="huK-rV-i84" firstAttribute="trailing" secondItem="sUl-7Y-5pH" secondAttribute="trailing" id="ozh-Ig-LJB"/>
+                            <constraint firstItem="huK-rV-i84" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ruQ-DW-MC3"/>
+                            <constraint firstItem="fbj-NF-oPV" firstAttribute="leading" secondItem="qF3-KX-eFc" secondAttribute="trailing" constant="8" symbolic="YES" id="vAg-4f-ppY"/>
+                            <constraint firstItem="K6M-Bo-SUV" firstAttribute="leading" secondItem="fbj-NF-oPV" secondAttribute="leading" id="vUY-7x-s4m"/>
+                            <constraint firstItem="qF3-KX-eFc" firstAttribute="top" secondItem="UOr-fd-iXM" secondAttribute="bottom" constant="18" id="wNO-2z-DHQ"/>
+                            <constraint firstItem="huK-rV-i84" firstAttribute="centerX" secondItem="Der-SV-CcX" secondAttribute="centerX" id="yoq-aj-1Ii"/>
+                            <constraint firstItem="Der-SV-CcX" firstAttribute="top" secondItem="fbj-NF-oPV" secondAttribute="bottom" constant="51" id="ywy-o7-hAG"/>
+                            <constraint firstItem="UOr-fd-iXM" firstAttribute="top" secondItem="huK-rV-i84" secondAttribute="bottom" constant="34" id="zE8-5N-RBH"/>
+                            <constraint firstItem="Der-SV-CcX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="za0-gg-kwe"/>
+                            <constraint firstItem="K6M-Bo-SUV" firstAttribute="bottom" secondItem="sUl-7Y-5pH" secondAttribute="bottom" id="zc7-IJ-4Eo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rubText" destination="VbV-xo-39M" id="T8m-yy-syZ"/>
+                        <outlet property="usdText" destination="sUl-7Y-5pH" id="bmP-SD-qKT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="17d49efc988357e2d396a5314d90c29a.jpg" width="180.35224914550781" height="120.1878662109375"/>
+        <image name="2473be05a74b7a3634ecbab3edfe57a8.jpg" width="1920" height="1200"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
